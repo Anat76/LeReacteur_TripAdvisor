@@ -3,23 +3,31 @@
 body {
   font-family: "Trip Sans Reg";
   background-color: #ffffff;
+  margin-top: 10px;
 }
 
 .container {
   width: 1130px;
   margin: 0 auto;
 }
+h2 {
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 12px;
+  color: #333333;
+}
 /* =======HEADER======== */
 header {
   display: flex;
-  padding: 6px 0;
   justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
 header img {
-  width: 200px;
   height: 40px;
 }
 
@@ -29,18 +37,19 @@ header ul {
   align-items: center;
 }
 header li {
+  display: flex;
   padding: 0 15px;
+  gap: 10px;
 }
 
-/* .connection p {
-
-} */
 .connection {
   color: white;
   background-color: #333333;
   border-radius: 50px;
   height: 40px;
   width: 145px;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -71,33 +80,61 @@ h1 a {
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .search div {
   border: 1px solid black;
-  margin-left: 10px;
   padding: 11px 16px;
   border-radius: 15px;
   flex: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 .search p {
   padding: 11px 16px;
 }
 
+/* =======IMG======== */
+
 .img {
-  padding-top: 10px;
+  height: 430px;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
+  gap: 2px;
 }
 
-.first {
-  width: 650px;
-  height: 430px;
+.img div:first-child {
+  height: 100%;
+  flex: 1;
 }
-.second {
-  margin-left: 5px;
+
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img div:last-child {
   width: 480px;
-  height: 213px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.img div:last-child div {
+  height: calc((100% -2px) / 2);
+}
+
+/* =======RESUME======== */
+
+.resume {
+  margin-top: 80px;
+  display: flex;
+}
+.resume div {
+}
+
+.resume p {
+  margin-top: 30px;
 }
