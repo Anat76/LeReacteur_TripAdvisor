@@ -14,6 +14,7 @@ h2 {
   color: #000000;
   font-size: 28px;
   font-weight: bold;
+  margin-top: 80px;
 }
 h3 {
   font-size: 12px;
@@ -131,10 +132,33 @@ h1 a {
 .resume {
   margin-top: 80px;
   display: flex;
+  gap: 50px;
+  border: red solid 1px;
 }
-.resume div {
+
+.resume > div {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.resume div:first-child p {
+  display: flex;
+  border: orange solid 1px;
+}
+.resume div img {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-items: flex-start;
+  border: brown solid 2px;
 }
 
 .resume p {
+  margin-top: 30px;
+}
+
+/* =======UNMISSABLE======== */
+.unmissable {
+  border: 1px solid black;
+  height: 300px;
   margin-top: 30px;
 }
