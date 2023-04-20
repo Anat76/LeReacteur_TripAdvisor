@@ -17,6 +17,11 @@ h2 {
   margin-top: 80px;
 }
 h3 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+h6 {
   font-size: 12px;
   color: #333333;
 }
@@ -133,7 +138,7 @@ h1 a {
   margin-top: 80px;
   display: flex;
   gap: 50px;
-  border: red solid 1px;
+  /* border: red solid 1px; */
 }
 
 .resume > div {
@@ -142,14 +147,14 @@ h1 a {
 }
 .resume div:first-child p {
   display: flex;
-  border: orange solid 1px;
+  /* border: orange solid 1px; */
 }
 .resume div img {
   width: 400px;
   height: 100%;
   display: flex;
   justify-items: flex-start;
-  border: brown solid 2px;
+  /* border: brown solid 2px; */
 }
 
 .resume p {
@@ -158,7 +163,73 @@ h1 a {
 
 /* =======UNMISSABLE======== */
 .unmissable {
-  border: 1px solid black;
-  height: 300px;
-  margin-top: 30px;
+  /* border: 1px solid black; */
+  /* height: 300px; */
+  margin: 30px;
+  margin-top: 60px;
+  display: flex;
+}
+.unmissable > div:first-child {
+  /* background-color: red; */
+  height: 100%;
+  width: 270px;
+}
+.unmissable > div:first-child p {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.unmissable > div:last-child {
+  height: 100%;
+  flex: 1;
+  /* border: blue solid 1px; */
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+/* =======CARROUSEL======== */
+.carrousel {
+  height: 100%;
+  width: calc((100% - 30px) / 3);
+  flex-shrink: 0;
+}
+.carrousel > div {
+  height: 200px;
+  position: relative;
+}
+
+.carrousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carrousel h4 {
+  padding-top: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.carrousel i {
+  margin: 1px;
+  color: #04a96c;
+}
+
+.carrousel p {
+  font-size: 14px;
+  padding: 10px 0;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
